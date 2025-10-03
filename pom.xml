@@ -84,8 +84,8 @@
         </configuration>
         <executions>
           <execution>
-            <id>verify-checkstyle</id>
-            <phase>verify</phase>
+            <id>validate-checkstyle</id>
+            <phase>validate</phase>
             <goals>
               <goal>check</goal>
             </goals>
