@@ -30,4 +30,15 @@ public class AdresseIP {
     public String toString() {
         return address;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof AdresseIP) return address.equals(((AdresseIP) o).address);
+        else return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return address.hashCode();
+    }
 }

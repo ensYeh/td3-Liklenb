@@ -10,7 +10,7 @@ public class NomMachineTest {
     public void testConstructor() {
         assertEquals("www.uvsq.fr", new NomMachine("www.uvsq.fr").toString());
         assertThrows(IllegalArgumentException.class, () -> new NomMachine(""));
-        assertThrows(IllegalArgumentException.class, () -> new NomMachine("www.uvsq.fr.error"));
+        assertThrows(IllegalArgumentException.class, () -> new NomMachine("uvsq"));
         assertThrows(IllegalArgumentException.class, () -> new NomMachine(null));
     }
 }
