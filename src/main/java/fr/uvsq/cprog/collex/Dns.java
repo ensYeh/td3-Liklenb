@@ -72,4 +72,10 @@ public class Dns {
         dnsItemsFromName.put(machine, new DnsItem(machine, ip));
         save();
     }
+
+    public void deleteDataBase() {
+        dnsItemsFromIp.clear();
+        dnsItemsFromName.clear();
+        save();
+    }
 }
